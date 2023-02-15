@@ -1,0 +1,230 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: yellow;
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+    padding: 10px;
+    z-index: 2;
+}
+.list{
+    font-size: 4ch;
+}
+
+.hello{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.store{
+    background-color: #1b5e20;
+    padding: 10px 20px;
+    color: #ffff;
+    align-self: flex-start;
+}
+
+.text_txt h1{
+    font-size: 8ch;
+    line-height: 1.2;
+    font-weight: 400px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.click_btn{
+    background-color: #fdd835;
+    align-self: flex-start;
+}
+
+.three{
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.home{
+    display: flex;
+    gap: 40px;
+    padding: 25px;
+}
+
+.home img{
+    width: 80px;
+}
+
+.gup{
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.food{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.food .tag{
+    align-self: center;
+}
+
+.pic{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "a1 a1 a2 a3"
+    "a1 a1 a2 a7"
+    "a4 a5 a6 a7";
+}
+
+.text1{
+    grid-area: a1;
+}
+
+.text2{
+    grid-area: a2;
+}
+
+.text3{
+    grid-area: a3;
+}
+
+.text4{
+    grid-area: a4;
+}
+
+.text5{
+    grid-area: a5;
+}
+
+.text6{
+    grid-area: a6;
+}
+
+.text7{
+    grid-area: a7;
+}
+
+.img_tst{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.img_tst:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.food1{
+    background-color: #1b5e20;
+    padding: 10px 20px;
+    color: #ffff;
+}
+
+footer{
+    background-color: #fdd835;
+}
+
+.foot_text{
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.point h3{
+    color: brown;
+}
+
+.point ul{
+    list-style: none;
+}
+
+.point ul{
+    margin-top: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+@media(max-width:786px){
+    .text{
+        flex-direction: column;
+    }
+
+    .text_img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text_img img{
+        width: 90%;
+    }
+
+    .text_txt{
+        gap:10px;
+        padding: 10px;
+
+    }
+
+    .text_txt h1{
+        font-size: 32px;
+    }
+
+    .three{
+        flex-direction: column;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .pic{
+        padding: 10px;
+    }
+
+    .pic-img{
+        border-radius: 0px;
+    }
+
+    .foot_text{
+        flex-direction: column;
+        
+    }
+}
